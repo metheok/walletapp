@@ -112,19 +112,21 @@ function Home() {
     return (
       <div>
         <h1>Wallet Form</h1>
-        <form onSubmit={submitForm}>
-          <div>
+        <form className="formContainer" onSubmit={submitForm}>
+          <div class="form-group">
             <label htmlFor="name">Name</label>
             <input name="name" type="text" id="name" />
           </div>
 
-          <div>
+          <div class="form-group">
             <label htmlFor="balance">Balance</label>
             <input name="balance" id="balance" step="0.0001" type="number" />
           </div>
 
           <div>
-            <button type="submit">Submit</button>
+            <button className="btn btn-primary" type="submit">
+              Submit
+            </button>
           </div>
           <div>{submitErr ? "error" : null}</div>
         </form>
@@ -133,14 +135,21 @@ function Home() {
   }
 
   return (
-    <div>
-      <h1>WALLET</h1>
-      <p>Wallet Name: {walletData.name}</p>
-      <p>Wallet Balance: {walletData.balance}</p>
+    <div className="container">
+      <h1 className="header">WALLET</h1>
+      <div className="info">
+        <p>
+          <b className="mr-1"> Wallet Name:</b> {walletData.name}
+        </p>
+        <p>
+          <b className="mr-1">Wallet Balance:</b> {walletData.balance}
+        </p>
+      </div>
+
       <div>
         <h3>Transaction Form</h3>
-        <form onSubmit={submitFormTxn}>
-          <div>
+        <form className="formContainer" onSubmit={submitFormTxn}>
+          <div class="form-group">
             <label htmlFor="amount">Amount:</label>
             <input
               name="amount"
@@ -150,7 +159,7 @@ function Home() {
               type="number"
             />
           </div>
-          <div>
+          <div class="form-group">
             <label htmlFor="type">Transaction type:</label>
 
             <select name="type" ref={txnFormtype} id="type">
@@ -158,7 +167,7 @@ function Home() {
               <option value="debit">Debit</option>
             </select>
           </div>
-          <div>
+          <div class="form-group">
             <label htmlFor="description">Description:</label>
             <textarea
               name="description"
@@ -168,7 +177,9 @@ function Home() {
             />
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button className="btn btn-primary" type="submit">
+              Submit
+            </button>
           </div>
           <div>{txnErr ? "error" : null}</div>
         </form>

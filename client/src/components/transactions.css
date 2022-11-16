@@ -18,3 +18,22 @@
 margin: auto;
 }
 .hidden{display: none;}
+
+.header{
+    margin: 1rem ;
+}
+.info{
+    margin: 3rem;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+}
+.flex label{margin-left: 3rem;}
+.flex button{margin-left: 3rem;}
+.table{
+    margin: 1rem;
+}
