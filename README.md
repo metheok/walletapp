@@ -1,5 +1,9 @@
 # Wallet app (gohighlevel)
 
+App is live on https://walletappnode.herokuapp.com/
+
+api requests on https://walletappnode.herokuapp.com/api
+
 ## Quick start
 
     git clone git@github.com:metheok/walletapp.git
@@ -7,10 +11,10 @@
     npm install
 
 
-    npm start  #run backend/server of the app on 4000 port
+    npm start                                                   #run backend/server of the app on 4000 port
     cd client
     npm install
-    npm start  #run frontend of the app on 3000 port
+    npm start                                                   #run frontend of the app on 3000 port
 
 # REST API
 
