@@ -4,8 +4,7 @@ const path = require("path");
 const mongoose = require("mongoose");
 const api = require("./api");
 const bodyParser = require("body-parser");
-const PORT = 4000;
-// const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 // const mongoURL = "mongodb://127.0.0.1/walletapp";
 const mongoURL =
