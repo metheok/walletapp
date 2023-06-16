@@ -1,4 +1,4 @@
-# Wallet app (gohighlevel)
+# Wallet app 
 
 App is live on https://walletappnode.herokuapp.com/
 
